@@ -5,7 +5,7 @@ const app=express()
 
 // CORS middleware
 app.use(cors({
-  origin: "http://localhost:5173", // 👈 frontend URL (React/Vite)
+  origin: "https://sheryians-banking-system-fronted.vercel.app", // 👈 frontend URL (React/Vite)
   credentials: true                // 👈 cookies allow karega
 }))
 
