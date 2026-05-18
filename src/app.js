@@ -1,6 +1,14 @@
 const  express = require("express")
 const cookieParser = require("cookie-parser")
+const cors = require("cors") 
 const app=express()
+
+// CORS middleware
+app.use(cors({
+  origin: "http://localhost:5173", // 👈 frontend URL (React/Vite)
+  credentials: true                // 👈 cookies allow karega
+}))
+
 
 app.use(express.json())
 app.use(cookieParser())
